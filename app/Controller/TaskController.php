@@ -12,7 +12,7 @@ class TaskController
 
     public function __construct()
     {
-        $connection = new DBConnection("mysql:host=localhost:3306;dbname=todoapp", "root", "root");
+        $connection = new DBConnection("mysql:host=localhost:3306;dbname=todolist", "root", "");
         $this->taskModel = new TaskModel($connection->connect());
     }
     public function index()

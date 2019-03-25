@@ -1,6 +1,6 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css" rel='stylesheet' />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.print.min.css" rel='stylesheet' media='print' />
-<script src='./app/lib/moment.min.js'></script>
+<script src='https://momentjs.com/downloads/moment.js'></script>
 <style>
   #calendar {
     max-width: 900px;

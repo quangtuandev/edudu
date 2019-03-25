@@ -27,6 +27,9 @@ class TaskModel
 
     public function editTask($task)
     {
+        if ($task->start > $task->end) {
+            return 'cannot execute';
+        }
         $sql = "UPDATE `tasks` SET `title` = ?, `start` = ?, `end` = ?, `status` = ? WHERE `id` = ?";
         $statement = $this->connection->prepare($sql);
         $statement->bindParam(1, $task['title']);
@@ -47,6 +50,9 @@ class TaskModel
 
     public function createTask($task)
     {
+        if ($task->start > $task->end) {
+            return 'cannot execute';
+        }
         $sql = "INSERT INTO `tasks`(`title`,`start`,`end`,`status`) VALUES(?,?,?,?)";
         $statement = $this->connection->prepare($sql);
         $statement->bindParam(1, $task->title);
