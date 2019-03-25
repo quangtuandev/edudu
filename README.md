@@ -8,5 +8,5 @@ Vào file Controller/TaskController.php để  cấu hình lại database
 </p>
 <h1>Run</h1>
 <p>
-Chạy <a href="http://localhost/TodoListNal">http://localhost/TodoListNal</a> để xem kết quả nhé :D
+Chạy <a href="http://localhost/TodoListNal">http://localhost/todoapp</a> để xem kết quả  :D
 </p>
